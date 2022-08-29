@@ -22,3 +22,18 @@ body
     max-height: 663 px;
     max-width: 755 px;
 }
+
+.profileCard
+{
+    justify-content: space-between;
+}
+
+.menu
+{
+    height: 200px;
+    width: 200px;
+    background: red;
+    margin-right: 100px;
+    margin-top: 150px;
+
+}
