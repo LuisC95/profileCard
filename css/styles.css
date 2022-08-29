@@ -19,21 +19,50 @@ body
 }
 .profilePicture
 {
-    max-height: 663 px;
-    max-width: 755 px;
+    height: 773px;
+    width: 663px;
+    /*background: linear-gradient(to right, #acf2e5, #98d936);*/
+    border-top-left-radius: 200px ;
+    border-bottom-right-radius: 200px;
+    opacity: 70%;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.stylePicture
+{
+    height: 773px;
+    width: 663px;
+    background: linear-gradient(to right, #acf2e5, #98d936);
+    opacity: 0.3;
+    position: absolute;
 }
 
-.profileCard
+.profilePicture img
 {
-    justify-content: space-between;
+    width: 100%;
+    z-index: 3;
 }
 
 .menu
 {
     height: 200px;
     width: 200px;
-    background: red;
+    background: #01261C;
+    box-shadow:  35px 35px 50px #01130e, -35px -35px 50px #02392a;
     margin-right: 100px;
-    margin-top: 150px;
+    margin-top: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
+
+.upSide
+{
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
 }
