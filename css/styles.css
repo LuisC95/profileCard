@@ -101,3 +101,42 @@ body
     padding: 0;
 
 }
+.firstThree, .lastTwo
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Source Sans Pro Light";
+    src: url("../fonts/SourceSansProLight.ttf");
+    font-weight: normal;
+    font-style: normal;
+    font-size: 48pt;
+    -webkit-background-clip: text;
+    background: linear-gradient(to right, #acf2e5, #f2ece4);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+
+}
+.center
+{
+    height: 410px;
+    width: 410px;
+    background: #4abf2a;
+    border-radius: 50%;
+    box-shadow: inset 20px 20px 60px #2f781a, inset -20px -20px 60px #65ff3a
+
+}
+.first, .last, .second, .third
+{
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    box-shadow:  35px 35px 50px #01130e, -35px -35px 50px #02392a;
+    background-color: #01261C;
+}
+.lastTwo
+{
+    padding-left: 10%;
+    padding-right: 10%;
+}
