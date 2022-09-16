@@ -8,6 +8,22 @@ body
     align-content: center;
     justify-content: center;
 }
+@media (max-width: 767px){
+    .profileCard
+    {
+        height: 100%;
+        height: 100%;
+    }
+    .profilePicture
+    {
+        width: 62%;
+    }
+    .menu
+    {
+        background: red;
+    }
+
+}
 .profileCard
 {
     height: 1920px;
