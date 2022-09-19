@@ -1,5 +1,8 @@
-body
-{
+
+@media(max-width: 767px){
+    
+    body
+    {
     background: #01261C;
     padding: 0;
     display: flex;
@@ -7,157 +10,138 @@ body
     width: auto;
     align-content: center;
     justify-content: center;
-}
-@media(max-width: 767px){
+    }
     .profileCard
     {
         height: 100%;
-        height: 100%;
-        border-radius: 0px;
+        width: 100%;
+        background: #acf2e5;
     }
     .profilePicture
     {
-        width: 62%;
+        height: 38vh;
+        width: 62vw;
+        /*background: linear-gradient(to right, #acf2e5, #98d936);*/
+        border-radius: 25%;
+        border-top-left-radius: 0px;
+        opacity: 70%;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
     }
+    .stylePicture
+    {
+        height: 38vh;
+        width: 62vw;
+        background: linear-gradient(to right, #acf2e5, #98d936);
+        opacity: 0.3;
+        position: absolute;
+    }
+    
+    .profilePicture img
+    {
+        width: 100%;
+        z-index: 3;
+    }
+    
     .menu
     {
-        background: red;
+        height: 200px;
+        width: 200px;
+        background: #01261C;
+        box-shadow:  35px 35px 50px #01130e, -35px -35px 50px #02392a;
+        margin-right: 100px;
+        margin-top: 100px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
     }
-
-}
-.profileCard
-{
-    height: 1920px;
-    width: 1080px;
-    border-radius: 200px;
-    background: #01261C;
-    box-shadow:  35px 35px 50px #01130e,
-             -35px -35px 50px #02392a;
-}
-.profilePicture
-{
-    height: 773px;
-    width: 663px;
-    /*background: linear-gradient(to right, #acf2e5, #98d936);*/
-    border-radius: 200px ;
-    border-bottom-left-radius: 0px;
-    opacity: 70%;
-    overflow: hidden;
-    position: relative;
-    z-index: 1;
-}
-.stylePicture
-{
-    height: 773px;
-    width: 663px;
-    background: linear-gradient(to right, #acf2e5, #98d936);
-    opacity: 0.3;
-    position: absolute;
-}
-
-.profilePicture img
-{
-    width: 100%;
-    z-index: 3;
-}
-
-.menu
-{
-    height: 200px;
-    width: 200px;
-    background: #01261C;
-    box-shadow:  35px 35px 50px #01130e, -35px -35px 50px #02392a;
-    margin-right: 100px;
-    margin-top: 100px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.upSide
-{
-    display: flex;
-    justify-content: space-between;
-    height: 773px;
-    width: 100%;
-}
-.name
-{
-    height: auto;
-    text-align: center;
-}
-.flName
-{
-    font-family: "Oswald";
-    src: url("../fonts/Oswald.otf");
-    font-weight: normal;
-    font-style: normal;
-    font-size: 100pt;
-    -webkit-background-clip: text;
-    background-clip: text;
-    background: linear-gradient(to right, #4abf2a, #98d936);
-    -webkit-background-clip: text;
-    color: transparent;
-    margin: 0;
-    margin-bottom: 0;
-
-}
-.ocupation
-{
-    font-family: "Source Sans Pro Light";
-    src: url("../fonts/SourceSansProLight.ttf");
-    font-weight: normal;
-    font-style: normal;
-    font-size: 48pt;
-    -webkit-background-clip: text;
-    background-clip: text;
-    background: linear-gradient(to right, #acf2e5, #f2ece4);
-    -webkit-background-clip: text;
-    color: transparent;
-    margin-top: 0;
-    padding: 0;
-
-}
-.firstThree, .lastTwo
-{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: "Source Sans Pro Light";
-    src: url("../fonts/SourceSansProLight.ttf");
-    font-weight: normal;
-    font-style: normal;
-    font-size: 48pt;
-    -webkit-background-clip: text;
-    background-clip: text;
-    background: linear-gradient(to right, #acf2e5, #f2ece4);
-    -webkit-background-clip: text;
-    color: transparent;
-    text-align: center;
-
-}
-.center
-{
-    height: 410px;
-    width: 410px;
-    background: #4abf2a;
-    border-radius: 50%;
-    box-shadow: inset 20px 20px 60px #2f781a, inset -20px -20px 60px #65ff3a
-
-}
-.first, .last, .second, .third
-{
-    height: 220px;
-    width: 220px;
-    border-radius: 50%;
-    box-shadow:  20px 20px 50px #01130e, -20px -20px 60px #02392a;
-    background-color: #01261C;
-    border-style: none; 
-}
-.lastTwo
-{
-    padding-left: 10%;
-    padding-right: 10%;
+    
+    .upSide
+    {
+        display: flex;
+        justify-content: space-between;
+        height: 773px;
+        width: 100%;
+    }
+    .name
+    {
+        height: auto;
+        text-align: center;
+    }
+    .flName
+    {
+        font-family: "Oswald";
+        src: url("../fonts/Oswald.otf");
+        font-weight: normal;
+        font-style: normal;
+        font-size: 100pt;
+        -webkit-background-clip: text;
+        background-clip: text;
+        background: linear-gradient(to right, #4abf2a, #98d936);
+        -webkit-background-clip: text;
+        color: transparent;
+        margin: 0;
+        margin-bottom: 0;
+    
+    }
+    .ocupation
+    {
+        font-family: "Source Sans Pro Light";
+        src: url("../fonts/SourceSansProLight.ttf");
+        font-weight: normal;
+        font-style: normal;
+        font-size: 48pt;
+        -webkit-background-clip: text;
+        background-clip: text;
+        background: linear-gradient(to right, #acf2e5, #f2ece4);
+        -webkit-background-clip: text;
+        color: transparent;
+        margin-top: 0;
+        padding: 0;
+    
+    }
+    .firstThree, .lastTwo
+    {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-family: "Source Sans Pro Light";
+        src: url("../fonts/SourceSansProLight.ttf");
+        font-weight: normal;
+        font-style: normal;
+        font-size: 48pt;
+        -webkit-background-clip: text;
+        background-clip: text;
+        background: linear-gradient(to right, #acf2e5, #f2ece4);
+        -webkit-background-clip: text;
+        color: transparent;
+        text-align: center;
+    
+    }
+    .center
+    {
+        height: 410px;
+        width: 410px;
+        background: #4abf2a;
+        border-radius: 50%;
+        box-shadow: inset 20px 20px 60px #2f781a, inset -20px -20px 60px #65ff3a
+    
+    }
+    .first, .last, .second, .third
+    {
+        height: 220px;
+        width: 220px;
+        border-radius: 50%;
+        box-shadow:  20px 20px 50px #01130e, -20px -20px 60px #02392a;
+        background-color: #01261C;
+        border-style: none; 
+    }
+    .lastTwo
+    {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
 }
