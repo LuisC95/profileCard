@@ -182,3 +182,40 @@
         width: 100%;
     }
 }
+
+body
+{
+    background: #01261C;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    height: auto;
+    width: auto;
+    align-content: center;
+    justify-content: center;
+    font-size: 62.5%;
+}
+.profileCard
+{
+    height: 30rem;
+    width: 20rem;
+    background: #01261C;
+    margin: 3.7%;
+    border-top-left-radius: 23.1% 13%;
+    border-bottom-right-radius: 23.1% 13%;
+    box-shadow:  9px 9px 18px #011811, -9px -9px 18px #013427;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.borderCard
+{
+    height: 95.8%;
+    width: 92.6%;
+    border-top-left-radius: 23.1% 13%;
+    border-bottom-right-radius: 23.1% 13%;
+    box-shadow: inset 9px 9px 18px #011811, inset -9px -9px 18px #013427;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
