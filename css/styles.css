@@ -61,7 +61,26 @@
         margin-right: 8%;
         margin-top: 5%;
         box-shadow:  9px 9px 18px #011811, -9px -9px 18px #013427;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
+    .menu
+    {
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+        box-shadow:  9px 9px 18px #011811, -9px -9px 18px #013427;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .menu img
+    {
+        width: 50%;
+
+    }    
     .profilePicture
     {
         height: 9rem;
@@ -138,20 +157,29 @@
         height: 40%;
         display: flex;
         justify-content: space-around;
-        background: #4abf2a;
     }
     .features
     {
         width: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
     }
     .links div
     {
         width: 3rem;
         height: 3rem;
-        background: #98d936;
+    }
+    .features button
+    {
+        border-style: none;
+        background-color: inherit;
+        height: 100%;
+        width: 100%;
+    }
+    .features button img
+    {
+        width: 100%;
     }
     /*
     .profilePicture
