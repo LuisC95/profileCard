@@ -219,3 +219,48 @@ body
     flex-direction: column;
     align-content: space-between;
 }
+.upSide
+{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.menuSection
+{
+    height: 35%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.menuSelect
+{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    margin-right: 8%;
+    margin-top: 5%;
+    box-shadow:  9px 9px 18px #011811, -9px -9px 18px #013427;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu
+{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    box-shadow:  9px 9px 18px #011811, -9px -9px 18px #013427;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.menu img
+{
+    width: 50%;
+
+}  
