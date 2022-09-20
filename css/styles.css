@@ -297,3 +297,40 @@ body
     width: 100%;
     z-index: 3;
 }
+.flName
+{
+    font-family: "Oswald";
+    src: url("../fonts/Oswald.otf");
+    font-weight: normal;
+    font-style: normal;
+    font-size: 3rem;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background: linear-gradient(to right, #4abf2a, #98d936);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin: 0;
+    margin-bottom: 0;
+
+}
+.name
+{
+    height: auto;
+    text-align: center;
+}
+.ocupation
+{
+    font-family: "Source Sans Pro Light";
+    src: url("../fonts/SourceSansProLight.ttf");
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1rem;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background: linear-gradient(to right, #acf2e5, #f2ece4);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-top: 0;
+    padding: 0;
+
+}
