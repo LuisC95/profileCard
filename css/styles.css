@@ -243,7 +243,7 @@ body
     border-radius: 50%;
     margin-right: 8%;
     margin-top: 5%;
-    box-shadow:  9px 9px 18px #011811, -9px -9px 18px #013427;
+    box-shadow:  5px 5px 18px #011811, -5px -5px 18px #013427;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -333,4 +333,34 @@ body
     margin-top: 0;
     padding: 0;
 
+}
+.links
+{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+.features
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.links div
+{
+    width: 3rem;
+    height: 3rem;
+}
+.features button
+{
+    border-style: none;
+    background-color: inherit;
+    height: 100%;
+    width: 100%;
+}
+.features button img
+{
+    width: 100%;
 }
