@@ -8,8 +8,8 @@
         display: flex;
         height: auto;
         width: auto;
-        align-content: center;
         justify-content: center;
+        align-items: center;
         font-size: 62.5%;
     }
     .profileCard
@@ -107,7 +107,7 @@
         position: absolute;
         z-index: 2;
         background: linear-gradient(to right, #acf2e5, #98d936);
-        opacity: 35%;
+        opacity: 40%;
     }
     .profilePicture img
     {
