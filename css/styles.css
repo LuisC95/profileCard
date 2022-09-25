@@ -23,7 +23,7 @@
         box-shadow:  9px 9px 18px #011811, -9px -9px 18px #013427;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: stretch;
     }
     .borderCard
     {
