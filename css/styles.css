@@ -1,10 +1,24 @@
 
+:root
+{
+    --firstColor: #01261C;
+    --softShadow: 5px 5px 18px #011811, -5px -5px 18px #013427;
+    --mediumShadow: 7px 7px 15px #013427, -7px -7px 18px #011811;
+    --hardShadow: 9px 9px 18px #011811, -9px -9px 18px #013427;
+    --insetHardShadow: inset 9px 9px 18px #011811, inset -9px -9px 18px #013427;
+    --firstGradient: linear-gradient(to right, #4abf2a, #98d936);
+    --secondGradient: linear-gradient(to right, #acf2e5, #98d936);
+    --thirdGradient: linear-gradient(to right, #acf2e5, #f2ece4);
+}
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 body
 {
-    background: #01261C;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+    background: var(--firstColor);
     display: flex;
     width: 100vw;
     height: 100vh;
@@ -16,11 +30,11 @@ body
 {
     height: 32rem;
     width: 20rem;
-    background: #01261C;
+    background: var(--firstColor);
     margin: 3.7%;
     border-top-left-radius: 23.1% 13%;
     border-bottom-right-radius: 23.1% 13%;
-    box-shadow:  9px 9px 18px #011811, -9px -9px 18px #013427;
+    box-shadow:  var(--hardShadow);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,7 +45,7 @@ body
     width: 92.6%;
     border-top-left-radius: 23.1% 13%;
     border-bottom-right-radius: 23.1% 13%;
-    box-shadow: inset 9px 9px 18px #011811, inset -9px -9px 18px #013427;
+    box-shadow: var(--insetHardShadow);
     display: flex;
     flex-direction: column;
     align-content: space-between;
@@ -60,7 +74,7 @@ body
     border-radius: 50%;
     margin-right: 8%;
     margin-top: 5%;
-    box-shadow:  5px 5px 18px #011811, -5px -5px 18px #013427;
+    box-shadow:  var(--softShadow);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,7 +84,7 @@ body
     height: 3rem;
     width: 3rem;
     border-radius: 50%;
-    box-shadow:  9px 9px 18px #011811, -9px -9px 18px #013427;
+    box-shadow:  var(--hardShadow);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,7 +99,7 @@ body
 {
     height: 8rem;
     width: 8rem;
-    box-shadow:  9px 9px 18px #011811, -9px -9px 18px #013427;
+    box-shadow:  var(--hardShadow);
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -96,7 +110,7 @@ body
     height: 7rem;
     width: 7rem;
     border-radius: 50%;
-    box-shadow:  7px 7px 15px #013427, -7px -7px 18px #011811;
+    box-shadow:  var(--mediumShadow);
     overflow: hidden;
     position: relative;
 }
@@ -106,7 +120,7 @@ body
     height: 7rem;
     position: absolute;
     z-index: 2;
-    background: linear-gradient(to right, #acf2e5, #98d936);
+    background: var(--secondGradient);
     opacity: 35%;
 }
 .profilePicture img
@@ -123,7 +137,7 @@ body
     font-size: 3rem;
     -webkit-background-clip: text;
     background-clip: text;
-    background: linear-gradient(to right, #4abf2a, #98d936);
+    background: var(--firstGradient);
     -webkit-background-clip: text;
     color: transparent;
     margin: 0;
@@ -144,7 +158,7 @@ body
     font-size: 1rem;
     -webkit-background-clip: text;
     background-clip: text;
-    background: linear-gradient(to right, #acf2e5, #f2ece4);
+    background:  var(--thirdGradient);
     -webkit-background-clip: text;
     color: transparent;
     margin-top: 0;
@@ -185,7 +199,7 @@ body
     
     body
     {
-        background: #01261C;
+        background: var(--firstColor);
         padding: 0;
         margin: 0;
         display: flex;
@@ -199,11 +213,11 @@ body
     {
         height: 95vh;
         width: 95vw;
-        background: #01261C;
+        background: var(--firstColor);
         margin: 3.7%;
         border-top-left-radius: 23.1% 13%;
         border-bottom-right-radius: 23.1% 13%;
-        box-shadow:  9px 9px 18px #011811, -9px -9px 18px #013427;
+        box-shadow:  var(--hardShadow);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -214,7 +228,7 @@ body
         width: 92.6%;
         border-top-left-radius: 23.1% 13%;
         border-bottom-right-radius: 23.1% 13%;
-        box-shadow: inset 9px 9px 18px #011811, inset -9px -9px 18px #013427;
+        box-shadow: var(--insetHardShadow);
         display: flex;
         flex-direction: column;
         align-content: space-between;
@@ -243,7 +257,7 @@ body
         border-radius: 50%;
         margin-right: 8%;
         margin-top: 5%;
-        box-shadow:  9px 9px 18px #011811, -9px -9px 18px #013427;
+        box-shadow:  var(--hardShadow);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -253,7 +267,7 @@ body
         height: 3rem;
         width: 3rem;
         border-radius: 50%;
-        box-shadow:  9px 9px 18px #011811, -9px -9px 18px #013427;
+        box-shadow:  var(--hardShadow);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -268,7 +282,7 @@ body
     {
         height: 9rem;
         width: 9rem;
-        box-shadow:  9px 9px 18px #011811, -9px -9px 18px #013427;
+        box-shadow:  var(--hardShadow);
         border-radius: 50%;
         display: flex;
         justify-content: center;
@@ -279,7 +293,6 @@ body
         height: 7rem;
         width: 7rem;
         border-radius: 50%;
-        box-shadow:  9px 9px 18px #013427, -9px -9px 18px #011811;
         overflow: hidden;
         position: relative;
     }
@@ -289,7 +302,7 @@ body
         height: 7rem;
         position: absolute;
         z-index: 2;
-        background: linear-gradient(to right, #acf2e5, #98d936);
+        background: var(--secondGradient);
         opacity: 40%;
     }
     .profilePicture img
@@ -306,7 +319,7 @@ body
         font-size: 3rem;
         -webkit-background-clip: text;
         background-clip: text;
-        background: linear-gradient(to right, #4abf2a, #98d936);
+        background: var(--firstGradient);
         -webkit-background-clip: text;
         color: transparent;
         margin: 0;
@@ -327,7 +340,7 @@ body
         font-size: 1rem;
         -webkit-background-clip: text;
         background-clip: text;
-        background: linear-gradient(to right, #acf2e5, #f2ece4);
+        background: var(--thirdGradient);
         -webkit-background-clip: text;
         color: transparent;
         margin-top: 0;
